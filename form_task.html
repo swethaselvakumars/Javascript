@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table cellpadding="20px">
+        <tr>
+           <td >Name</td> 
+           <td><input type="text" placeholder="enter your name" id="first"></td> 
+        </tr>
+        <tr>
+             <td >Email</td> 
+             <td><input type="text" placeholder="enter your email" id="second"></td> 
+         </tr>
+         <tr>
+            <td>DOB</td> 
+            <td><input type="date" placeholder="enter your birthdate"id="third"></td>
+         </tr>
+         <tr>
+            <td>mobile</td>
+            <td><input type="text" placeholder="enter your number"id="fourth"></td>
+         </tr>
+    </table> 
+    <h1 id="heading"></h1>
+    <p id="firstinput">ooooooooooooooooooooo</p>
+    <p id="secondinput"></p>
+    <p id="thirdinput"></p>
+    <p id="fourthinput"></p>
+    <button onclick="application()">submit</button>
+    <script>
+        function application(){
+            document.getElementById("heading").innerHTML="check details"
+            var a=document.getElementById("first").value
+            document.getElementById("firstinput").style.backgroundColor="red"
+
+            var b=document.getElementById("second").value
+            document.getElementById("secondinput").innerHTML=b
+
+            var c=document.getElementById("third").value
+            document.getElementById("thirdinput").innerHTML=c
+
+            var d=document.getElementById("fourth").value
+            document.getElementById("fourthinput").innerHTML=d
+
+        }
+
+    </script>
+
+</body>
+</html>
