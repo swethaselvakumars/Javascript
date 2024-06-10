@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="input" onkeydown="keyboardevent()">
+   <p id="output"></p>
+   <input type="text" id="input1" onkeyup="keyboard()">
+   <p id="out"></p>
+   <script>
+    function keyboardevent(){
+     var a=document.getElementById("input").value
+     document.getElementById("output").innerHTML=a
+    }
+    function keyboard(){
+        var a=document.getElementById("input1").value
+     document.getElementById("out").innerHTML=a
+
+    }
+   </script> 
+</body>
+</html>
