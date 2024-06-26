@@ -1,6 +1,6 @@
 
  function promisese(){
-    return "halwa"
+    return "halwaaa"
 }
 
 console.log(promisese())
