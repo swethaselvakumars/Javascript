@@ -3,4 +3,4 @@ var b=a.map((num,index)=>{
 a[index]=num*2.3
 return num*2.3
 })
-console.log(a)
+console.log(a)   
