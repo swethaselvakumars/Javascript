@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="add">
+    <button onclick="additems()" id="btn">additems</button>
+    <ul id="list"></ul>
+
+    <script>
+        const additems=()=>{
+        var a=document.getElementById("add").value 
+        
+        var b=document.getElementById("list")
+        var li=document.createElement('li')
+        li.textContent=a
+        b.appendChild(li)
+
+        var c=document.createElement("button")
+        c.textContent="remove"
+        li.appendChild(c)
+
+        c.onclick=function(){
+            b.removeChild(li)
+        }
+
+    }
+    </script>
+</body>
+</html>
